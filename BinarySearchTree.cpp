@@ -137,4 +137,29 @@ public:
         postorder(ptr->rightchild);
         cout << ptr->info << " "; // Parent
     }
+
+
+    bool isEmpty()
+        {
+            return ROOT == nullptr;
+        }
 };
+
+int main()
+{
+    BinaryTree x;
+    while (true)
+    {
+        cout << "\nMenu" << endl;
+        cout << "1. Masukkan Sebuah Nilai" << endl;
+        cout << "2. Lakukan Traversal Inorder" << endl;
+        cout << "3. Lakukan Traversal Preorder" << endl;
+        cout << "4. Lakukan Traversal Postorder" << endl;
+        cout << "5. Keluar" << endl;
+        cout << "\nMasukan Pilihan Anda (1-5) : ";
+
+        
+    }
+};
+
+
