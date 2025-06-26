@@ -78,4 +78,11 @@ public:
         }
     }
 
+    void search(int elemnt, Node *&parent, Node *&currentNode)
+    {
+        // The function search the currentNode of the specifide Node as well as the current Node of its parent
+        currentNode = ROOT;
+        parent = nullptr;
+        
+    }
 };
