@@ -1,38 +1,42 @@
 #include <iostream>
-using namespace std; 
+using namespace std;
 
-class node
+class Node
 {
-    public:
-        int info;
-        node *leftchild;
-        node *rightchild;
+public: 
+    int info;
+    Node *leftchild;
+    Node *rightchild;
 
-        // constructor untuk class node
-        node()
-        {
-            leftchild = nullptr; //inisialisasi left child jadi null
-            rightchild = nullptr; //inisialisasi rigt child jadi null           
-        }  
+    // Contruktor untuk class node
+    Node()
+    {
+        leftchild = nullptr; // Initialize left child to null
+        rightchild = nullptr; // Initialize right child to null
+    }
 };
 
 class BinaryTree
 {
-    
-    public:
-        node *ROOT;
+public: 
+    Node *ROOT;
 
     BinaryTree()
     {
-        ROOT = nullptr; // inisialisasi root jadi null
+        ROOT = nullptr; // Initializing ROOT to null
     }
 
     void insert()
-      {
+    {
         int x;
-        cout << "Masukkan Sebuah Nilai = ";
+        cout << "Masukan nilai: ";
         cin >> x;
 
-        // step selanjutnya mengalokasikan memori u
-      }  
-}
+        // Step 1: Mengalokasikan memori untuk new node
+        Node *newNode = new Node();
+
+        
+    }
+
+    
+};
