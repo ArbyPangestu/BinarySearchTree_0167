@@ -8,4 +8,10 @@ class node
         node *leftchild;
         node *rightchild;
 
-}
+        // constructor untuk class node
+        node()
+        {
+            leftchild = nullptr; //inisialisasi left child jadi null
+            rightchild = nullptr; //inisialisasi rigt child jadi null           
+        }  
+};
