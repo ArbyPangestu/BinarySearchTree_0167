@@ -83,6 +83,12 @@ public:
         // The function search the currentNode of the specifide Node as well as the current Node of its parent
         currentNode = ROOT;
         parent = nullptr;
-        
+        while ((currentNode != nullptr) && (currentNode->info != elemnt))
+        {
+            parent = currentNode;
+            if (elemnt < currentNode->info)
+                currentNode = currentNode->leftchild;
+            else
+        }
     }
 };
